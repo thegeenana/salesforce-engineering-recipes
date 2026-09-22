@@ -1,0 +1,14 @@
+{
+  "name": "Safe Lead Conversion",
+  "id": "lead-conversion",
+  "problem": "Custom lead conversion must coordinate Account, Contact and optional Opportunity outcomes without corrupting the transaction.",
+  "sourcePath": "recipes/lead-conversion",
+  "componentPrefix": "LeadConvert",
+  "testClasses": [],
+  "dependencies": [],
+  "frameworkIntegrations": [
+    "ApexRail",
+    "ApexSignal"
+  ],
+  "status": "planned"
+}
