@@ -1,0 +1,11 @@
+{
+  "name": "Register PDF Generation",
+  "id": "register-pdf",
+  "problem": "Operational records must be transformed into a stable, printable and consistently formatted document.",
+  "sourcePath": "recipes/register-pdf",
+  "componentPrefix": "RegisterPdf",
+  "testClasses": [],
+  "dependencies": [],
+  "frameworkIntegrations": [],
+  "status": "planned"
+}
