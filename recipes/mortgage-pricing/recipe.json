@@ -1,0 +1,13 @@
+{
+  "name": "Event-Driven Mortgage Pricing",
+  "id": "mortgage-pricing",
+  "problem": "One mortgage request can produce several pricing options asynchronously rather than one immediate response.",
+  "sourcePath": "recipes/mortgage-pricing",
+  "componentPrefix": "MortgagePricing",
+  "testClasses": [],
+  "dependencies": [],
+  "frameworkIntegrations": [
+    "ApexSignal"
+  ],
+  "status": "planned"
+}
