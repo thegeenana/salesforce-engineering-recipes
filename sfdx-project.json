@@ -1,0 +1,15 @@
+{
+  "packageDirectories": [
+    {"path": "shared", "default": true},
+    {"path": "recipes/campaign-notification", "default": false},
+    {"path": "recipes/mortgage-pricing", "default": false},
+    {"path": "recipes/bulk-trigger-remediation", "default": false},
+    {"path": "recipes/register-pdf", "default": false},
+    {"path": "recipes/lead-conversion", "default": false},
+    {"path": "recipes/multi-currency-invoicing", "default": false}
+  ],
+  "name": "salesforce-engineering-recipes",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "65.0"
+}
