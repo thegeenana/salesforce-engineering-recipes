@@ -10,6 +10,11 @@ if [[ ! -f "$RECIPE_PATH/recipe.json" ]]; then
   exit 1
 fi
 
+if [[ ! -d "$RECIPE_PATH/main/default" ]]; then
+  echo "Recipe has no implemented Salesforce metadata yet: $RECIPE_ID" >&2
+  exit 1
+fi
+
 sf project deploy start \
   --source-dir "$RECIPE_PATH" \
   --target-org "$TARGET_ORG"
