@@ -1,0 +1,13 @@
+{
+  "name": "Multi-Currency Invoicing and Credit Notes",
+  "id": "multi-currency-invoicing",
+  "problem": "International advertisement sales require invoices and credit notes whose historical values remain commercially truthful.",
+  "sourcePath": "recipes/multi-currency-invoicing",
+  "componentPrefix": "CurrencyInvoice",
+  "testClasses": [],
+  "dependencies": [],
+  "frameworkIntegrations": [
+    "ApexSignal"
+  ],
+  "status": "planned"
+}
