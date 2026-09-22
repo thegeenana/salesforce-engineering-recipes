@@ -1,0 +1,14 @@
+{
+  "name": "Bulk Trigger Remediation",
+  "id": "bulk-trigger-remediation",
+  "problem": "Automation works for a few records but fails around a trigger-sized collection or data load.",
+  "sourcePath": "recipes/bulk-trigger-remediation",
+  "componentPrefix": "BulkRepair",
+  "testClasses": [],
+  "dependencies": [],
+  "frameworkIntegrations": [
+    "ApexRail",
+    "ApexSignal"
+  ],
+  "status": "planned"
+}
