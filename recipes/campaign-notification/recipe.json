@@ -1,0 +1,14 @@
+{
+  "name": "Campaign Notifications at Scale",
+  "id": "campaign-notification",
+  "problem": "A single transaction cannot safely notify a large Campaign Member population.",
+  "sourcePath": "recipes/campaign-notification",
+  "componentPrefix": "CampaignNotify",
+  "testClasses": [],
+  "dependencies": [],
+  "frameworkIntegrations": [
+    "ApexConvoy",
+    "ApexSignal"
+  ],
+  "status": "planned"
+}
