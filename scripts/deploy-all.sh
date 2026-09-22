@@ -2,13 +2,26 @@
 set -euo pipefail
 
 TARGET_ORG="${1:-recipes}"
+ALLOWED_SOURCE_ROOTS=(
+  "shared"
+  "recipes/campaign-notification"
+  "recipes/mortgage-pricing"
+  "recipes/bulk-trigger-remediation"
+  "recipes/register-pdf"
+  "recipes/lead-conversion"
+  "recipes/multi-currency-invoicing"
+)
 
-sf project deploy start \
-  --source-dir shared \
-  --source-dir recipes/campaign-notification \
-  --source-dir recipes/mortgage-pricing \
-  --source-dir recipes/bulk-trigger-remediation \
-  --source-dir recipes/register-pdf \
-  --source-dir recipes/lead-conversion \
-  --source-dir recipes/multi-currency-invoicing \
-  --target-org "$TARGET_ORG"
+ARGS=()
+for SOURCE_ROOT in "${ALLOWED_SOURCE_ROOTS[@]}"; do
+  if [[ -d "$SOURCE_ROOT/main/default" ]]; then
+    ARGS+=(--source-dir "$SOURCE_ROOT")
+  fi
+done
+
+if [[ "${#ARGS[@]}" -eq 0 ]]; then
+  echo "No implemented Salesforce metadata found." >&2
+  exit 1
+fi
+
+sf project deploy start "${ARGS[@]}" --target-org "$TARGET_ORG"
